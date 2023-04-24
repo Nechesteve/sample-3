@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="Home-box custom-box ">
+  <h3>Instructions:
+  </h3>
+  <p>Attempt all questions</p> <br>
+  <p>Total number of questions: <span class="total-questions"></span></p>
+  <button type="button" class="btn event" onclick="startQuiz()">Start Quiz</button>
+  </div>
+  <div class="quiz-box custom-box hide">
+
+    <p class="timer"></p>
+    
+    <div class="question-number">
+       </div>
+    <div class="question-text">
+    </div>
+    <div class="option-container">
+    </div>
+    <div class="next-question-btn" onclick="next()">
+        <button type="button" class="btn">Next</button>
+        <button type="button" class="btn prev" onclick="prev()">Prev</button>
+    </div>
+    <div class="answer-indicator">
+       
+    </div>
+</div> 
+<div class="result-box custom-box hide">
+    <h1>Quiz Result</h1>
+    <table>
+        <tr>
+            <td>Total Question</td>
+            <td><span class="total-question"></span></td>
+        </tr>
+        <tr>
+            <td>Attempt</td>
+            <td><span class="total-attempt"></span></td>
+        </tr>
+        <tr>
+            <td>Correct</td>
+            <td><span class="total-correct"></span></td>
+        </tr>
+        <tr>
+            <td>Wrong</td>
+            <td><span class="total-wrong"></span></td>
+        </tr>
+        <tr>
+            <td>Percentage</td>
+            <td><span class="percentage"></span></td>
+        </tr>
+        <tr>
+            <td>Your Score</td>
+            <td><span
+                 class="total-score"></span></td>
+        </tr>
+    </table>
+    
+    <button type="button" class="btn" onclick="tryAgainQuiz()">Try Again</button>
+    <button type="button" class="btn" onclick="goToHome()">Go To Home</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
