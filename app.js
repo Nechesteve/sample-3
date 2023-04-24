@@ -72,7 +72,7 @@ const answersIndicatorContainer = document.querySelector(".answer-indicator");
 const homeBox = document.querySelector(".Home-box");
 const quizBox = document.querySelector(".quiz-box");
 const resultBox = document.querySelector(".result-box");
-const eventEl = document.querySelector(".event");
+
 
 const questionLimit = 5;
 //change quiz.length to questionLimit
